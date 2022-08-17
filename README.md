@@ -1,4 +1,4 @@
-<p align="center"><a href="https://www.metered.ca/blog/building-a-group-video-chat-app-with-webrtc-and-php-laravel/" target="_blank"><img src="docs/images/image.png" width="800"></a></p>
+<p align="center"><a href="https://www.metered.ca/blog/building-a-group-video-chat-app-with-webrtc-and-php-laravel/" target="_blank"><img src="docs/images/image-10.png" width="800"></a></p>
 
 
 # Group Video Chat App with PHP Laravel and JavaScript
