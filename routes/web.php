@@ -13,6 +13,7 @@ use App\Http\Controllers\MeetingController;
 | contains the "web" middleware group. Now create something great!
 |
 */
+// URL::forceScheme('https');
 
 Route::get('/', function () {
     return view('welcome');
@@ -22,6 +23,11 @@ Route::post("/createMeeting", [MeetingController::class, 'createMeeting'])->name
 
 Route::post("/validateMeeting", [MeetingController::class, 'validateMeeting'])->name("validateMeeting");
 
-Route::get("/meeting/{meetingId}", function() {
-    return view('meeting');
+Route::get("/meeting/{meetingId}", function($meetingId) {
+
+    $METERED_DOMAIN = env('METERED_DOMAIN');
+    return view('meeting', [
+        'METERED_DOMAIN' => $METERED_DOMAIN,
+        'MEETING_ID' => $meetingId
+    ]);
 });
